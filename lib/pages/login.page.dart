@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-import 'package:balta_shopping/pages/home.page.dart';
 import 'package:balta_shopping/pages/signup.page.dart';
 
 class LoginPage extends StatelessWidget {
