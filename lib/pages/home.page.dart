@@ -16,14 +16,14 @@ class HomePage extends StatelessWidget {
             SizedBox(height: 60),
             SearchBox(),
             SizedBox(height: 30),
-            Text("Categories", style: TextStyle(fontSize: 30)),
+            Text("Categories", style: Theme.of(context).textTheme.headline),
             SizedBox(height: 10),
             Container(height: 90, child: CategoryList()),
             SizedBox(height: 30),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[
-                Text("Best Selling", style: TextStyle(fontSize: 30)),
+                Text("Best Selling", style: Theme.of(context).textTheme.headline),
                 FlatButton(
                   child: Text("See All"),
                   onPressed: () {},

@@ -21,11 +21,11 @@ class TabsPage extends StatelessWidget {
           Tab(icon: new Icon(Icons.shopping_cart)),
           Tab(icon: new Icon(Icons.perm_identity))
         ],
-        labelColor: Colors.blue,
+        labelColor: Theme.of(context).primaryColor,
         unselectedLabelColor: Colors.black38,
         indicatorSize: TabBarIndicatorSize.tab,
         indicatorPadding: EdgeInsets.all(5.0),
-        indicatorColor: Colors.blue,
+        indicatorColor: Theme.of(context).primaryColor,
       ),
     );
   }

@@ -8,7 +8,6 @@ class LoginPage extends StatelessWidget {
     return Scaffold(
       body: SingleChildScrollView(
         child: Container(
-          color: Color(0xFFF5F5F5),
           padding: EdgeInsets.only(
             top: 80,
             left: 20,
@@ -20,7 +19,7 @@ class LoginPage extends StatelessWidget {
               Container(
                 height: 450,
                 decoration: BoxDecoration(
-                  color: Colors.white,
+                  color: Theme.of(context).accentColor,
                   boxShadow: [
                     new BoxShadow(
                       color: Colors.black12,
@@ -41,16 +40,21 @@ class LoginPage extends StatelessWidget {
                             children: <Widget>[
                               Text(
                                 "Welcome",
-                                style: TextStyle(
-                                  fontSize: 30,
-                                  fontWeight: FontWeight.w500,
-                                ),
+                                style: Theme.of(context).textTheme.display2,
                               ),
-                              Text("Sign in to continue"),
+                              Text(
+                                "Sign in to continue",
+                                style: Theme.of(context).textTheme.subhead,
+                              ),
                             ],
                           ),
                           FlatButton(
-                            child: Text('Sign up'),
+                            child: Text(
+                              'Sign up',
+                              style: TextStyle(
+                                color: Theme.of(context).primaryColor,
+                              ),
+                            ),
                             onPressed: () {
                               Navigator.push(
                                 context,
@@ -70,32 +74,39 @@ class LoginPage extends StatelessWidget {
                         decoration: InputDecoration(
                           labelText: "Email",
                           labelStyle: TextStyle(
-                            color: Colors.black,
+                            color: Theme.of(context).primaryColor,
                             fontWeight: FontWeight.w400,
                             fontSize: 16,
                           ),
                         ),
                         style: TextStyle(
-                          fontSize: 20,
-                        ),
+                            fontSize: 20,
+                            color: Theme.of(context).primaryColor),
                       ),
                       TextFormField(
                         obscureText: true,
                         decoration: InputDecoration(
                           labelText: "Password",
                           labelStyle: TextStyle(
-                            color: Colors.black,
+                            color: Theme.of(context).primaryColor,
                             fontWeight: FontWeight.w400,
                             fontSize: 16,
                           ),
                         ),
-                        style: TextStyle(fontSize: 20),
+                        style: TextStyle(
+                            fontSize: 20,
+                            color: Theme.of(context).primaryColor),
                       ),
                       Container(
                         height: 40,
                         alignment: Alignment.centerRight,
                         child: FlatButton(
-                          child: Text("Forgot your password?"),
+                          child: Text(
+                            "Forgot your password?",
+                            style: TextStyle(
+                              color: Theme.of(context).primaryColor,
+                            ),
+                          ),
                           onPressed: () {},
                         ),
                       ),
@@ -103,7 +114,7 @@ class LoginPage extends StatelessWidget {
                       Container(
                         width: double.infinity,
                         decoration: BoxDecoration(
-                          color: Colors.green,
+                          color: Theme.of(context).primaryColor,
                           borderRadius: BorderRadius.all(
                             Radius.circular(5),
                           ),
@@ -111,7 +122,7 @@ class LoginPage extends StatelessWidget {
                         child: FlatButton(
                           child: Text(
                             "Sign In",
-                            style: TextStyle(color: Colors.white),
+                            style: TextStyle(color: Theme.of(context).accentColor),
                           ),
                           onPressed: () {},
                         ),
@@ -136,7 +147,7 @@ class LoginPage extends StatelessWidget {
                 decoration: BoxDecoration(
                   border: Border.all(
                     width: 2.0,
-                    color: Colors.blue,
+                    color: Theme.of(context).accentColor,
                   ),
                   borderRadius: BorderRadius.all(
                     Radius.circular(5),
@@ -163,7 +174,7 @@ class LoginPage extends StatelessWidget {
                 decoration: BoxDecoration(
                   border: Border.all(
                     width: 2.0,
-                    color: Colors.blue,
+                    color: Theme.of(context).accentColor,
                   ),
                   borderRadius: BorderRadius.all(
                     Radius.circular(5),
