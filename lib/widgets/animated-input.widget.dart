@@ -64,9 +64,7 @@ class AnimatedInput extends StatelessWidget {
               width: 20,
             ),
             Icon(Icons.search),
-            SizedBox(
-              width: 20,
-            ),
+            SizedBox(width: 20),
             Container(
               width: 200,
               child: TextFormField(
