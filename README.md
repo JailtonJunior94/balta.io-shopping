@@ -1,16 +1,29 @@
-# balta_shopping
+## O que é?
+Curso de criação de um App Mobile com foco na interface, componentes, animações e temas.
 
-A new Flutter project.
+## Tecnologias
+- Flutter
+- Dart
 
-## Getting Started
+## Balta.io Develop your career
+[Curso - Dominando Layouts no Flutter](https://app.balta.io/courses/7185)
 
-This project is a starting point for a Flutter application.
+## Certificado
+![Screenshot](/images/DominandoLayoutsFlutter.png)
 
-A few resources to get you started if this is your first Flutter project:
+## App
+<p align="center">
+  <img src="images/login.jpeg" width="200" title="Login">
+  <img src="images/home.jpeg" width="200" alt="Home">
+  <img src="images/cart.jpeg" width="200" title="Cart">
+</p>
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+## IDE utilizada
+[Visual Studio Code](https://code.visualstudio.com/)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Extensões Visual Studio Code 
+[Flutter](https://marketplace.visualstudio.com/items?itemName=Dart-Code.flutter)<br/>
+[Dart](https://marketplace.visualstudio.com/items?itemName=Dart-Code.dart-code)<br/>
+
+## Requisitos
+[Flutter get started](https://flutter.dev/docs/get-started/install)
